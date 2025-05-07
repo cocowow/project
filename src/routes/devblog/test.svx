@@ -1,0 +1,10 @@
+---
+title: "Devblog 2"
+date: "2025-05-07"
+---
+# Hello!
+<br>
+Today I added a navigation bar, and made it only visible when hovering over it with a mouse and it stays at the top of the screen all the time.
+I also added some placeholders for the icons which will send you to my socials (I'll add that another day).
+<br>
+I want the images in sketches to loop around as you scroll, I have not been able to figure out how to do that.
