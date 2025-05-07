@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
     import { base } from '$app/paths';
 
-    let skeches = [{img: "dumrcok.jpg", info:"idkgang"}, {img:"IMG_5202.JPG"},{img:"IMG_5216.JPG"}]
+    let skeches = [{img: "dumrcok.jpg", info:"idkgang"}, {img:"IMG_5202.jpg"},{img:"IMG_5216.jpg"}]
     let moreSkeches = [...skeches,...skeches,...skeches]
 
     let things;

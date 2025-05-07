@@ -77,7 +77,7 @@
     }
     
     .home{
-        background-image: url("IMG_5197.JPG");
+        background-image: url("IMG_5197.jpg");
         background-size: cover;
         background-position: 50% 10%;
         opacity: 0.9;
@@ -174,12 +174,12 @@
         margin-bottom: 100px;
     }
     #sketch{
-        background-image: url("IMG_5216.JPG");
+        background-image: url("IMG_5216.jpg");
         background-size: cover;
         background-position: 100%;
     }
     #artwork{
-        background-image: url("IMG_5202.JPG");
+        background-image: url("IMG_5202.jpg");
         background-size: cover;
         
     }
