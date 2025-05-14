@@ -1,0 +1,9 @@
+---
+title: "Devblog 3"
+date: "2025-05-14"
+---
+
+
+# Hello!
+
+Today i made some smooth scrolling whne pressong on the nav links things!!!

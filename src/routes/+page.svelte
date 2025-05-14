@@ -1,8 +1,11 @@
 <script>
 	import { base } from "$app/paths";
     import { onMount } from "svelte";
+    import { scrollTo, scrollRef, scrollTop } from 'svelte-scrolling'
+
 
     let icon = "circel.png"
+    let phot = "mephho.png"
     let things;
 
     onMount(() => {
@@ -36,25 +39,32 @@
 
 
 <main>
-    <div class="home" id="home">
+    <div class="home" id="home" use:scrollRef={'home'}>
         <h1 class="thing">Portfolio</h1>
     </div>
-    <div class="about" id="about">
+    <div class="about" id="about" use:scrollRef={'about'}>
         <div class="left">
             <h2 class="thing">HELLO!</h2>
             <div class="thing" id="line"></div>
             <div class="thing" id="me">
-                i am me and here my art wowoowowowo i am this old and i am this and this and yes very beautifol pictru of me to the right here don  u like it veyr mcuc ebfo lvo e ir  so fjdocduh its amaixn
+              <p>  I’m Jordan Carter, a graphic designer specializing in branding and digital design. With a background in visual arts and a passion for storytelling, I help businesses craft memorable identities that resonate with their audience.
+
+Over the past 4 years, I’ve worked with startups, agencies, and creative teams to develop logos, marketing materials, and user-friendly digital experiences. My approach balances creativity with strategy—ensuring every design not only looks great but serves a purpose.
+
+When I’m not designing, you’ll find me exploring photography, browsing art galleries, or perfecting my latte art. Let’s collaborate and bring your vision to life!
+</p>
+
             </div>
+            <p class="thing">contact</p>
             <div class="thing show" id="contact">
                 <img src="{icon}" alt="email" id="icons">
                 <img src="{icon}" alt="sociakmedid" id="icons">
                 <img src="{icon}" alt="another social medi..." id="icons">
             </div>
         </div>
-        <img class="thing show" id="mee" src="https://i.pinimg.com/236x/84/6d/ab/846dab8b33339cb37cff781a8b95ab07.jpg" alt="cat">
+        <img class="thing show" id="mee" src="{phot}" alt="cat">
     </div>
-    <div class="gallery" id="gallery">
+    <div class="gallery" id="gallery" use:scrollRef={'gallery'}>
         <h3 class="thing">Gallery</h3>
         
         <a href="{base}/sketches">
@@ -81,7 +91,7 @@
         background-size: cover;
         background-position: 50% 10%;
         opacity: 0.9;
-        height: 100vh;
+        height: 110vh;
         width: 100vw;
         overflow-x: hidden;
         background-attachment: fixed;
@@ -101,7 +111,7 @@
     }
     .about{
         padding: 100px;
-        padding-top: 200px;
+        padding-top: 100px;
         height: 110vh;
         background-color: rgb(241, 178, 224);
         color: black;
@@ -110,16 +120,19 @@
         display: flex;
         justify-content: space-between;
         position: relative;
+        align-items: center;
     }
     .left{
         width: 50%;
+        margin-left: 12vh;
     }
     #mee{
-        height: 60vh;
+        height: 70vh;
+        opacity: 1;
     }
     h2{
         justify-items: center;
-        margin-left: 10vw;
+        margin-left: 0;
         font-size: 6vw;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: rgb(244, 42, 140);
@@ -128,19 +141,18 @@
         height: 3px;
         width: 30vw;
         background-color: rgb(244, 42, 140);
-        margin-left: 10vw;
+        margin-left: 0;
         margin-top: 50px;
 
     }
     #me{
-        margin: 60px;
-        height: 20vh;
+        margin: 20px;
+        height: 33vh;
         width: 30vw;
-        border: rgba(0, 0, 0, 0.259) 4px dotted;
-        margin-left: 10vw;
+        margin-left: 0;
         border-radius: 10px;
         margin-bottom: 0px;
-        color: rgba(168, 84, 119, 0.803);
+        color: rgb(244, 42, 140);
     }
     #contact{
         height: 15vh;
@@ -149,7 +161,7 @@
         border-radius: 25px;
         color: black;
         margin: 20px;
-        margin-left: 10vw;
+        margin-left: 0;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -161,17 +173,21 @@
     .gallery{
         height: 250vh;
         background-color: rgb(202, 212, 255);
-        padding: 100px;
+        padding: 150px;
         border-top-width: 10px;
         border-color: rgb(244, 42, 140);
         justify-items: center;
+        background-image: url(/bgpink.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     h3{
         font-size: 130px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         color: rgb(241, 178, 224);
         -webkit-text-stroke: rgb(244, 42, 140) 3px;
-        margin-bottom: 100px;
+        margin-bottom: 150px;
     }
     #sketch{
         background-image: url("IMG_5216.jpg");

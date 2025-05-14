@@ -2,8 +2,8 @@
     import { onMount } from "svelte";
     import { base } from '$app/paths';
 
-    let skeches = [{img: "dumrcok.jpg", info:"idkgang"}, {img:"IMG_5202.jpg"},{img:"IMG_5216.jpg"}]
-    let moreSkeches = [...skeches,...skeches,...skeches]
+    let skeches = [{img: "dumrcok.jpg", info:"idkgang"}, {img:"IMG_5202.jpg"},{img:"IMG_5216.jpg"}, {img:"IMG_5308.jpeg"},{img:"IMG_5310.jpeg"},{img:"IMG_5311.jpeg"},{img:"IMG_5312.jpeg"}]
+    let moreSkeches = [...skeches]
 
     let things;
 
@@ -42,22 +42,22 @@
 
         {/each}
     </div>
+    <div class="white"></div>
 </main>
 
 <style>
     main{
         overflow-y: hidden;
-        overflow-x: hidden;
         background-color: rgb(255, 215, 240);
+        padding-top: 8vh;
     }
     .horizontal-scroll{
         overflow-y: hidden;
         overflow-x: auto;
-        height: 100vh;
+        height: 80vh;
         width: fit-content;
         display: flex;
         flex-wrap: nowrap;
-        -webkit-overflow-scrolling: touch;
         align-items: center;
         scroll-behavior: smooth;
         
@@ -65,10 +65,11 @@
     #sketches{
             flex: 0 0 auto;
             margin: 100px;
-            border: solid black 5px;
+            border: solid rgb(255, 255, 255) 10px;
             vertical-align: middle;
-            background-color: white;
+            background-color: rgb(0, 0, 0);
             padding: 3vh;
+            object-fit: contain;
         }
     .thing{
         transition: 600ms ease-in-out;
@@ -79,5 +80,10 @@
         width: 60vw;
         height: 70vh;
     }
-   
+    .white{
+		background-color: white;
+		height: 10vh;
+        width: 100%;
+        position: fixed;
+	}
 </style>
