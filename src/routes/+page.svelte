@@ -86,7 +86,7 @@ When I’m not designing, you’ll find me exploring photography, browsing art g
     }
     
     .home{
-        background-image: url(/static/IMG_5197.jpg);
+        background-image: url(/astart.jpg);
         background-size: cover;
         background-position: 50% 10%;
         opacity: 0.9;
@@ -197,7 +197,7 @@ When I’m not designing, you’ll find me exploring photography, browsing art g
         background-position: 100%;
     }
     #artwork{
-        background-image: url(/IMG_5202.jpg);
+        background-image: url(/artwork1.jpg);
         background-size: cover;
         
     }
