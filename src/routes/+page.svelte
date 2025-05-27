@@ -192,16 +192,16 @@ When I’m not designing, you’ll find me exploring photography, browsing art g
         margin-bottom: 150px;
     }
     #sketch{
-        background-image: url("IMG_5216.jpg");
+        background-image: url(/IMG_5216.jpg);
         background-size: cover;
         background-position: 100%;
     }
     #artwork{
-        background-image: url("IMG_5202.jpg");
+        background-image: url(/IMG_5202.jpg);
         background-size: cover;
         
     }
-    #sketch, #artwork, #idkyet{
+    #sketch, #artwork{
         height: 50vh;
         width: 50vw;
         margin: 100px;
@@ -214,7 +214,7 @@ When I’m not designing, you’ll find me exploring photography, browsing art g
         align-content: center;
         justify-items: center;
     }
-    #sketch:hover, #artwork:hover, #idkyet:hover{
+    #sketch:hover, #artwork:hover{
         color: rgba(255, 106, 163, 0.763);
         opacity: 80%;
         transform: translateX(0);
