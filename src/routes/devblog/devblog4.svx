@@ -1,0 +1,9 @@
+---
+title: "Devblog 4"
+date: "2025-05-27"
+---
+
+# Hi!!
+
+Today I was making sure my website could get uploaded on github. I had installed a svelte carousel which seemed to ahve some problems when being uploaded on github.
+I didn't know how to fix that so I decided to go with another version I made myself for the artwork and sketches page. Some of my images did not load on github, I changed the names of the images and also instead of "img" I used /img. Then they finally decided to show up on github.
