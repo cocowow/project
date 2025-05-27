@@ -7,6 +7,9 @@
     let icon = "circel.png"
     let phot = "mephho.png"
     let things;
+    let insta = "instagram.png"
+    let linked = "linkedin.png"
+    let yt = "youtube.png"
 
     onMount(() => {
         things = document.querySelectorAll(".thing");
@@ -47,7 +50,7 @@
             <h2 class="thing">HELLO!</h2>
             <div class="thing" id="line"></div>
             <div class="thing" id="me">
-              <p>  I’m Jordan Carter, a graphic designer specializing in branding and digital design. With a background in visual arts and a passion for storytelling, I help businesses craft memorable identities that resonate with their audience.
+              <p class="meinfo">  I’m Jordan Carter, a graphic designer specializing in branding and digital design. With a background in visual arts and a passion for storytelling, I help businesses craft memorable identities that resonate with their audience.
 
 Over the past 4 years, I’ve worked with startups, agencies, and creative teams to develop logos, marketing materials, and user-friendly digital experiences. My approach balances creativity with strategy—ensuring every design not only looks great but serves a purpose.
 
@@ -55,14 +58,13 @@ When I’m not designing, you’ll find me exploring photography, browsing art g
 </p>
 
             </div>
-            <p class="thing">contact</p>
             <div class="thing show" id="contact">
-                <img src="{icon}" alt="email" id="icons">
-                <img src="{icon}" alt="sociakmedid" id="icons">
-                <img src="{icon}" alt="another social medi..." id="icons">
+                <button><img src="{insta}" alt="email" id="icons"></button>
+                <button><img src="{linked}" alt="sociakmedid" id="icons"></button>
+                <button><img src="{yt}" alt="another social medi..." id="icons"></button>
             </div>
         </div>
-        <img class="thing show" id="mee" src="{phot}" alt="cat">
+        <img class="thing " id="mee" src="{phot}" alt="cat">
     </div>
     <div class="gallery" id="gallery" use:scrollRef={'gallery'}>
         <h3 class="thing">Gallery</h3>
@@ -75,9 +77,6 @@ When I’m not designing, you’ll find me exploring photography, browsing art g
         <div class="thing" id="artwork">
             <p>Artworks</p>
         </div></a>
-        <div class="thing" id="idkyet">
-            <p>Traditional</p>
-        </div>
     </div>
 </main>
 
@@ -87,7 +86,7 @@ When I’m not designing, you’ll find me exploring photography, browsing art g
     }
     
     .home{
-        background-image: url("IMG_5197.jpg");
+        background-image: url(/IMG_5197.jpg);
         background-size: cover;
         background-position: 50% 10%;
         opacity: 0.9;
@@ -110,8 +109,7 @@ When I’m not designing, you’ll find me exploring photography, browsing art g
         flex-wrap: wrap;
     }
     .about{
-        padding: 100px;
-        padding-top: 100px;
+        padding: 5vh 8vw;
         height: 110vh;
         background-color: rgb(241, 178, 224);
         color: black;
@@ -124,11 +122,16 @@ When I’m not designing, you’ll find me exploring photography, browsing art g
     }
     .left{
         width: 50%;
-        margin-left: 12vh;
+        margin-left: 5vw;
     }
     #mee{
-        height: 70vh;
-        opacity: 1;
+        
+        width: 40vw;
+
+        
+    }
+    .meinfo{
+        font-size: 1vw;
     }
     h2{
         justify-items: center;
@@ -155,23 +158,22 @@ When I’m not designing, you’ll find me exploring photography, browsing art g
         color: rgb(244, 42, 140);
     }
     #contact{
-        height: 15vh;
+        height: 6vh;
         width: 30vw;
-        background-color: rgba(189, 71, 198, 0.105);
-        border-radius: 25px;
-        color: black;
+        margin-top: 2vh;
         margin: 20px;
         margin-left: 0;
+        margin-bottom: 0;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
     }
     #icons{
-        height: 9vh;
+        width: 3vw;
     }
     .gallery{
-        height: 250vh;
+        height: 180vh;
         background-color: rgb(202, 212, 255);
         padding: 150px;
         border-top-width: 10px;
@@ -179,7 +181,7 @@ When I’m not designing, you’ll find me exploring photography, browsing art g
         justify-items: center;
         background-image: url(/bgpink.png);
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: repeat-y;
         background-attachment: fixed;
     }
     h3{
@@ -220,7 +222,7 @@ When I’m not designing, you’ll find me exploring photography, browsing art g
     .thing{
         opacity: 0;
         transition: opacity 700ms ease-in-out;
-        transform: translateX(-200px);
+        transform: translateX(-8vw);
         transition: 1s;
     }
     .thing.show{

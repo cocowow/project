@@ -101,6 +101,6 @@
 	}
 	
 	.link:hover{
-		color: rgb(165, 67, 113);
+		color: rgb(207, 126, 164);
 	}
 </style>
