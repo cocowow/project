@@ -192,7 +192,7 @@ When I’m not designing, you’ll find me exploring photography, browsing art g
         margin-bottom: 150px;
     }
     #sketch{
-        background-image: url(/IMG_5216.jpg);
+        background-image: url(/asketch.jpg);
         background-size: cover;
         background-position: 100%;
     }

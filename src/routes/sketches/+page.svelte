@@ -1,7 +1,7 @@
 <script>
     import { onMount } from "svelte";
 
-    let skeches = [{img:"IMG_5216.jpg"}, {img:"IMG_5308.jpeg"},{img:"sketch1.jpeg"},{img:"sketch2.jpeg"},{img:"sketch3.jpeg"},{img:"sketch4.jpeg"},{img:"sketch5.jpeg"}]
+    let skeches = [{img:"asketch.jpg"}, {img:"IMG_5308.jpeg"},{img:"sketch1.jpeg"},{img:"sketch2.jpeg"},{img:"sketch3.jpeg"},{img:"sketch4.jpeg"},{img:"sketch5.jpeg"}]
     let moreSkeches = [...skeches]
 
     let things;
